@@ -1,0 +1,941 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Night Club</title>
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link href="css/jquery.countdown.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" />
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
+<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+</head>
+
+<body id="wrapper" data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+<div id="loader">
+    <div class="loader">        
+    </div>
+</div>
+
+<!-- start banner -->
+<div id="banner" class="module parallax parallax-header">
+    <div class="container">
+        <div class="row">
+            <div class="banner-inner">                
+                <div id="header-slider" class="owl-carousel">              
+                    <div class="item col-xs-12">
+                        <h1 class="title title-lines">
+                            <span>10 March, 2016</span>
+                        </h1>
+                        <h3 class="subtitle">Live Concert in France</h3>
+                        <a class="btn scroll btn-concert-register" href="#reservation">Register</a>
+                        <a class="btn btn-concert-play" href="http://vimeo.com/8245346" data-gal="prettyPhoto">Watch Video</a>
+                    </div>
+                    <div class="item">
+                        <div class="col-sm-5 col-lg-4 col-xs-12">
+                            <div class="concert-registration">
+                                <form class="form-inline">
+                                  <div class="form-group">
+                                    <label class="sr-only" for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="sr-only" for="inputEmail">Email</label>
+                                    <input type="password" class="form-control" id="inputEmail" placeholder="Email" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="sr-only" for="inputPhone">Phone</label>
+                                    <input type="password" class="form-control" id="inputPhone" placeholder="Phone" required>
+                                  </div>
+                                  <button type="submit" class="btn btn-default btn-lg btn-concert-registration" value="">Register Now</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-lg-8 col-xs-12 hidden-xs">
+                            <div class="title title-lines-full">
+                                <hr class="hr-line">
+                                <hr class="hr-line">
+                                <h1>
+                                    <span>10 March, 2016</span>
+                                </h1>
+                                <h3 class="subtitle">Live Concert in France</h3>
+                                <hr class="hr-line">
+                                <hr class="hr-line" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-xs-12">
+                        <h1 class="title title-lines">
+                            <span>10 March, 2016</span>
+                        </h1>
+                        <h3 class="subtitle">Live Concert in France</h3>
+                        <a class="btn-play" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
+                          <span class="play-button">
+                            <i class="fa fa-play fa-4x"></i>
+                          </span>
+                        </a>
+                    </div>
+                    <div class="item col-xs-12">
+                        <h1 class="title title-lines">
+                            <span>10 March, 2016</span>
+                        </h1>
+                        <h3 class="subtitle">Live Concert in France</h3>
+                        <div id="defaultCountdown" class="col-sm-12"></div>
+                            <script type="text/javascript">
+                                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                            </script>
+                            <script type="text/javascript">
+                                var pageTracker = _gat._getTracker("UA-4715900-1");
+                                pageTracker._initData();
+                                pageTracker._trackPageview();
+                            </script>
+                        <a class="btn scroll" href="#reservation">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row banner-bottom hidden-xs">
+            <div class="concert-info">
+                <div class="col-xs-12 col-sm-3 col-md-3 no-left-padding">
+                    <div class="concert-info-body">
+                        <span class="pull-left"><i class="fa fa-calendar fa-2x"></i></span>
+                        <div class="concert-info-text">
+                            <h4>Date</h4>
+                            <span>10 March,2016</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 no-left-padding">
+                    <div class="concert-info-body">
+                        <span class="pull-left"><i class="fa fa-users fa-2x"></i></span>
+                        <div class="concert-info-text">
+                            <h4>Remaining</h4>
+                            <span>245 Tickets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 no-left-padding">
+                    <div class="concert-info-body">
+                        <span class="pull-left"><i class="fa fa-microphone fa-2x"></i></span>
+                        <div class="concert-info-text">
+                            <h4>Artists</h4>
+                            <span>6 Famous Artists</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 no-left-padding">
+                    <div class="concert-info-body">
+                        <span class="pull-left"><i class="fa fa-map-marker fa-2x"></i></span>
+                        <div class="concert-info-text">
+                            <h4>Location</h4>
+                            <span>ABC, XYZ, France</span>
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end banner -->
+
+<!-- start header -->
+<header id="header" data-spy="affix" data-offset-top="2" >
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-2 col-sm-3 col-xs-12 text-center logo">
+            	<a href="index.html"><img class="logo-img wow fadeIn" data-wow-duration="3s" src="images/logo.png" alt="Night Club logo" /></a>
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12 header-right affix-header-right">
+            	<nav class="navbar navbar-default col-xs-12 text-center">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="hvr-underline-from-center active"><a href="#banner" class="scroll"> HOME </a></li>
+                            <li class="hvr-underline-from-center"><a href="#gallery" class="scroll"> GALLERY </a></li>
+                            <li class="hvr-underline-from-center"><a href="#events" class="scroll"> EVENTS </a></li>
+                            <li class="hvr-underline-from-center"><a href="#blogs" class="scroll"> BLOG &amp; NEWS </a></li>
+                            <li class="hvr-underline-from-center"><a href="#reservation" class="scroll"> CONTACT </a></li>
+                        </ul>
+                   </div>
+                </nav>
+               </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- start services -->
+<div id="services">
+	<div class="container">
+    	<div class="row">
+        	<div class="services-inner col-md-12 text-center">
+                <h1 class="wow fadeInUp" data-wow-duration="2s">SMART NIGHT SERVICE</h1>
+                <h2 class="wow fadeInUp" data-wow-duration="2s">Mauris a massa id leo aliquam consequat porttitor vitae est.</h2>
+                <p class="wow fadeInUp" data-wow-duration="2s">Mauris a massa id leo aliquam consequat porttitor vitae est. Proin ultricies velit sed porttitor viverra. Pellen-tesque eget tristique est. Donec volutpat, eros et bibendum lacinia Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                 </p>
+                <div class="servicebox col-md-4 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                	<img class="img-responsive" src="images/service-img1.jpg" alt="Night club service" />
+                    <div class="servicebox-inner text-left wow slideInLeft">
+                    	<img src="images/music.png" alt="Night Club Music" />
+                        <h2>DJ'S MUSIC</h2>
+                        <p>Nulla or narm mus vel ultric-<br>ies. Quisque ve odio nibh <br> Nulla or narm mus vel ultric-<br>ies. Quisque ve odio.</p>
+                    </div>
+                </div>
+                <div class="servicebox col-md-4 wow fadeIn" data-wow-delay="1.3s" data-wow-duration="2s">
+                	<img class="img-responsive" src="images/service-img2.jpg" alt="Night club service" />
+                    <div class="servicebox-inner text-left">
+                    	<img src="images/drink.png" alt="Night Club Music" />
+                        <h2>DRINK BAR</h2>
+                        <p>Nulla or narm mus vel ultric-<br>ies. Quisque ve odio nibh <br> Nulla or narm mus vel ultric-<br>ies. Quisque ve odio.</p>
+                    </div>
+                </div>
+                <div class="servicebox col-md-4 wow fadeIn" data-wow-delay="1.6s" data-wow-duration="2s">
+                	<img class="img-responsive" src="images/service-img3.jpg" alt="Night club service" />
+                    <div class="servicebox-inner text-left">
+                    	<img src="images/restaurant.png" alt="Night Club Music" />
+                        <h2>RESTAURANT</h2>
+                        <p>Nulla or narm mus vel ultric-<br>ies. Quisque ve odio nibh <br> Nulla or narm mus vel ultric-<br>ies. Quisque ve odio.</p>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!-- end services -->
+
+<!-- start gallery -->
+<div id="gallery" class="text-center">
+    <div class="container">
+       <div class="row text-center">
+         <div class="tabs tabs-style-linebox wow fadeInUp" data-wow-duration="2s">
+             <nav>    
+               <ul class="filters">
+                <li data-filter="all" class="hvr-sweep-to-top active filter"><span>All</span></li>
+                <li data-filter=".girlsPub" class="hvr-sweep-to-top filter"><span>Girls Pub</span></li>
+                <li data-filter=".danceParty" class="hvr-sweep-to-top filter"><span>Dance Party</span></li>
+                <li data-filter=".videos" class="hvr-sweep-to-top filter"><span>Videos</span></li>
+               </ul>
+             </nav>
+         </div>
+       </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row gallery text-center">
+        <div class="col-md-12 noPadding">
+           <div class="gallery-photo-grid">
+              <div class="gallery-photos">
+                 <div class="gallery-photos-thumb">
+                    <div class="gallery-photo-item mix danceParty wow fadeIn">
+                       <a class="pretty-photo" href="images/gallery-img1.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-1.jpg" alt="image-1">
+                          </div>
+                          <div class="overlay">
+                            <span class="gallery-icon">
+                              <i class="fa fa-search-plus fa-2x">
+                              </i>
+                            </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix danceParty wow fadeIn" data-wow-delay="0.2s">
+                       <a class="pretty-photo" href="images/gallery-img2.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-2.jpg" alt="image-2">
+                          </div>
+                          <div class="overlay">
+                            <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.4s">
+                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-3.jpg" alt="Video">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-play fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.6s">
+                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-4.jpg" alt="video">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-play fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.1s">
+                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-5.jpg" alt="video">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-play fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
+                       <a class="pretty-photo" href="images/gallery-img6.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-6.jpg" alt="image-3">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix danceParty wow fadeIn" data-wow-delay="0.4s">
+                       <a class="pretty-photo" href="images/gallery-img7.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-7.jpg" alt="image-4">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix danceParty wow fadeIn" data-wow-delay="0.6s">
+                       <a class="pretty-photo" href="images/gallery-img8.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-8.jpg" alt="image-5">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
+                       <a class="pretty-photo" href="images/gallery-img9.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-9.jpg" alt="image-6">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.4s">
+                       <a class="pretty-photo" href="images/gallery-img10.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-10.jpg" alt="image-7">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.5s">
+                       <a class="pretty-photo" href="images/gallery-img11.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-11.jpg" alt="image-8">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.6s">
+                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
+                          <div class="photo-thumb">
+                             <img src="images/gallery-small-img-12.jpg" alt="Video">
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-play fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- end gallery -->
+
+<!-- subscribe form -->
+<div id="club-form">
+	<div class="container">
+    	<div class="row">
+        	<div class="club-form col-md-7 col-sm-6 text-center">
+            	<h1 class="wow fadeIn" data-wow-duration="1s">WANT THE LATEST PARTY NEWS?</h1>
+                <p class="wow fadeIn" data-wow-duration="1s">Subscribe to our newsletter and never miss Party again!</p>
+                <form id="subscribe-form" method="post" class="clearfix wow fadeIn" data-wow-duration="2s">
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                    <input type="submit" name="submit" class="submit submit-button" value="GO!">
+                 </form>
+                 <p class="wow fadeIn" data-wow-delay="1s" data-wow-duration="1s">We’ll never send unwanted spam. Promise.</p>
+            </div>
+            <div class="club-form col-md-5 col-sm-6 hidden-xs wow fadeIn" data-wow-duration="3s">
+            	<img class="img-responsive" src="images/form-img.jpg" alt="Night Club Image" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end club top form -->
+
+<!-- Event of the month -->
+<div id="events" class="module parallax parallax-events">
+	<div class="container">
+    	<div class="row">
+        	<div class="event-inner col-sm-12 text-center">
+            	<h1 class="wow fadeInUp" data-wow-duration="1s">EVENTS OF THE MONTH</h1>
+                    <ul class="bxslider one">
+                        <li>
+                            <div class="event-box">
+                                <div class="event-box-left clearfix">
+                                    <h2>29 <br><span class="month"> APRIL</span></h2>
+                                    <h3>11:00 PM</h3>
+                                    <p><i class="fa fa-map-marker"></i><br>
+                                        CITY PLAZA, <br>NEW YORK, AMERICA
+                                    </p>
+                                </div>
+                                <div class="event-box-right clearfix">
+                                    <img class="img-responsive" src="images/event-img1.jpg" alt="Night Club Event" />
+                                </div>
+                                <div class="event-box-bottom text-left clearfix">
+                                    <h2>Fire and ice dumparter party!</h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="event-box">
+                                <div class="event-box-left clearfix">
+                                    <h2>07 <br><span class="month"> AUGUST</span></h2>
+                                    <h3>12:20 AM</h3>
+                                    <p><i class="fa fa-map-marker"></i><br>
+                                        CITY PLAZA, <br>NEW YORK, AMERICA
+                                    </p>
+                                </div>
+                                <div class="event-box-right clearfix">
+                                    <img class="img-responsive" src="images/event-img2.jpg" alt="Night Club Event" />
+                                </div>
+                                <div class="event-box-bottom text-left clearfix">
+                                    <h2>Proudly Present owner theme event</h2>
+                                </div>
+                          </div>
+                      </li>
+                       <li>
+                            <div class="event-box">
+                                <div class="event-box-left clearfix">
+                                    <h2>21 <br><span class="month"> October</span></h2>
+                                    <h3>03:10 AM</h3>
+                                    <p><i class="fa fa-map-marker"></i><br>
+                                        CITY PLAZA, <br>NEW YORK, AMERICA
+                                    </p>
+                                </div>
+                                <div class="event-box-right clearfix">
+                                    <img class="img-responsive" src="images/event-img3.jpg" alt="Night Club Event" />
+                                </div>
+                                <div class="event-box-bottom text-left clearfix">
+                                    <h2>Proudly Present owner theme event</h2>
+                                </div>
+                          </div>
+                      </li>
+                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Event of the month -->
+
+<!-- start club profiles -->
+<div id="club-profiles" class="module parallax parallax-profiles">
+	<div class="container">
+    	<div class="row">
+        	<h1 class="wow fadeInUp" data-wow-duration="1s">MOST POPULAR DJ'S PROFILE</h1>
+            <div class="col-md-6 col-sm-12 profile-box wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+               <div class="col-md-6 col-sm-6 profile-box-left flip-container text-center">     
+                  <div class="flipper">         
+                    <div class="front" id="dj-1"> </div>          
+                    <div class="back text-center">              
+                        <ul class="profile-social">
+
+                            <li class="facebook">
+                                <a href="#" class="entypo-facebook">
+                                    <i class="fa fa-facebook fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a href="#" class="entypo-twitter">
+                                    <i class="fa fa-twitter fa-2x"></i>        
+                                </a>
+                            </li>
+                            <li class="dribbble">
+                                <a href="#" class="entypo-dribbble">
+                                    <i class="fa fa-google-plus fa-2x"></i>       
+                                </a>
+                            </li>
+                            <li class="behance">
+                                <a href="#" class="entypo-behance">
+                                    <i class="fa fa-pinterest fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="linked-in">
+                                <a href="#" class="entypo-linkedin">
+                                    <i class="fa fa-linkedin fa-2x"></i>        
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>      
+                  </div>  
+                </div>
+                <div class="col-md-6 col-sm-6 profle-box-right clearfix">
+                    <h2>DJ Zadda</h2>
+                    <h3>Turnable master</h3>
+                    <p>
+                        Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.
+                    </p>
+                    <div class="profile-info text-center">
+                    	<!-- <img class="img-responsive" src="images/since.png" alt="Night Club" /> -->
+                       <div class="eq">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                       </div>
+                        <p>SINCE</p>
+                        <h3>2002</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                    	<img class="img-responsive" src="images/event.png" alt="Night Club" />
+                        <p>EVENT</p>
+                        <h3>1367</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                    	<img class="img-responsive" src="images/latest.png" alt="Night Club" />
+                        <p>LATEST</p>
+                        <h3>12:33</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 profile-box wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                <div class="col-md-6 col-sm-6 profile-box-left flip-container text-center">     
+                  <div class="flipper">         
+                    <div class="front" id="dj-2"> </div>          
+                    <div class="back text-center">              
+                        <ul class="profile-social">
+
+                            <li class="facebook">
+                                <a href="#" class="entypo-facebook">
+                                    <i class="fa fa-facebook fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a href="#" class="entypo-twitter">
+                                    <i class="fa fa-twitter fa-2x"></i>        
+                                </a>
+                            </li>
+                            <li class="dribbble">
+                                <a href="#" class="entypo-dribbble">
+                                    <i class="fa fa-google-plus fa-2x"></i>       
+                                </a>
+                            </li>
+                            <li class="behance">
+                                <a href="#" class="entypo-behance">
+                                    <i class="fa fa-pinterest fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="linked-in">
+                                <a href="#" class="entypo-linkedin">
+                                    <i class="fa fa-linkedin fa-2x"></i>        
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>      
+                  </div>  
+                </div>
+                <div class="col-md-6 col-sm-6 profle-box-right clearfix">
+                    <h2>DJ Robat</h2>
+                    <h3>Turnable master</h3>
+                    <p>
+                        Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.
+                    </p>
+                    <div class="profile-info text-center">
+                       <div class="eq">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                       </div>
+                        <p>SINCE</p>
+                        <h3>2008</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                        <img class="img-responsive" src="images/event.png" alt="Night Club" />
+                        <p>EVENT</p>
+                        <h3>3598</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                        <img class="img-responsive" src="images/latest.png" alt="Night Club" />
+                        <p>LATEST</p>
+                        <h3>10:33</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end club profiles -->
+
+<!-- start blogs -->
+<div id="blogs">
+	<div class="container">
+    	<div class="row">
+        	<h1 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">POPULAR BLOGS</h1>
+            <div class="blog-slider col-md-7 col-xs-12">
+                <ul class="nav nav-tabs bxslider two">
+                    <li class="clearfix active">
+                    	<div class="borderLeft"></div>
+                        <div class="event-time clearfix">
+                            <p>21-05-2009</p>
+                            <h2>friday</h2>
+                            <i class="fa fa-microphone"></i>
+                        </div>
+                        <div class="event-detail clearfix">
+                        	<i class="fa fa-caret-left fa-4x"></i>
+                        	<div class="event-detail-img">
+                              <img src="images/blog-small-img1.png" alt="Night Club Blog" />
+                            </div>
+                            <div class="event-detail-inner">
+                                <h2><a href="#blog1" data-toggle="tab">Girls Party Pub Review</a></h2>
+                                <p>Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem</p>
+                                <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<div class="borderLeft"></div>
+                        <div class="event-time clearfix">
+                            <p>25-09-2012</p>
+                            <h2>monday</h2>
+                            <i class="fa fa-play"></i>
+                        </div>
+                        <div class="event-detail clearfix">
+                        	<i class="fa fa-caret-left fa-4x"></i>
+                            <div class="event-detail-img">
+                            	<img src="images/blog-small-img2.jpg" alt="Night Club Blog" />
+                            </div>
+                            <div class="event-detail-inner">
+                                <h2><a href="#blog2" data-toggle="tab">More then 100 year of night club</a></h2>
+                                <p>Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem</p>
+                                <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<div class="borderLeft"></div>
+                        <div class="event-time clearfix">
+                            <p>22-12-2013</p>
+                            <h2>sunday</h2>
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="event-detail clearfix">
+                        	<i class="fa fa-caret-left fa-4x"></i>
+                            <div class="event-detail-img">
+                            	<img src="images/blog-small-img3.jpg" alt="Night Club Blog" />
+                            </div>
+                            <div class="event-detail-inner">
+                                <h2><a href="#blog3" data-toggle="tab">Tattoo convention club</a></h2>
+                                <p>Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem.</p>
+                                <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="control">
+            <span id="slider-prev">
+                
+            </span>
+            <span id="slider-next">
+                
+            </span>
+        </div>
+            </div>
+            <div id="myTabContent" class="col-md-5 col-xs-12 tab-content wow fadeIn" data-wow-duration="1s">
+            	<div class="tab-pane active" id="blog1">
+              		<h2>Girls Party Pub Review</h2>
+                	<i class="fa fa-user"><span class="admin">by admin</span></i>
+                    <i class="fa fa-tag"><span class="tag">event, tattoos, convetions</span></i>
+                    <img class="wow fadeIn" data-wow-duration="1s" src="images/blog-img1.jpg" alt="Night Club Event" />
+                    <div class="overlay clearfix">
+                    	<div class="overlay-inner">
+                            <h3><span class="bold">Beautiful tattoos</span> - source: Image Bigshok</h3>
+                      </div>
+                    </div>
+                    <h3>Reviews of parties</h3>
+                    <p class="wow fadeIn" data-wow-duration="1s">Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.Nulla or narm mus vel ultricies Nulla or narm Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.</p>
+                    <div class="share">
+                    	<h4>Share this article:</h4>
+                        <p class="clearfix">
+                            <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                            <a href="http://www.google.com"><i class="fa fa-google"></i></a>
+                            <a href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+                            <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                            <a href="http://www.rss.com"><i class="fa fa-rss"></i></a>
+                        </p>
+                    </div>
+              </div>
+              <div class="tab-pane" id="blog2">
+                  <h2>More then 100 year of night club</h2>
+                  <i class="fa fa-user"><span class="admin">by admin</span></i>
+                    <i class="fa fa-tag"><span class="tag">event, tattoos, convetions</span></i>
+                    <img src="images/blog-img2.jpg" alt="Night Club Event" />
+                    <div class="overlay clearfix">
+                      <div class="overlay-inner">
+                            <h3><span class="bold">Beautiful tattoos</span> - source: Image Bigshok</h3>
+                      </div>
+                    </div>
+                    <h3>We are the champion of this field</h3>
+                    <p>Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.Nulla or narm mus vel ultricies Nulla or narm Nulla or narm mus vel ultricies.</p>
+                    <div class="share">
+                      <h4>Share this article:</h4>
+                        <p class="clearfix">
+                            <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                            <a href="http://www.google.com"><i class="fa fa-google"></i></a>
+                            <a href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+                            <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                            <a href="http://www.rss.com"><i class="fa fa-rss"></i></a>
+                        </p>
+                    </div>
+              </div>
+              <div class="tab-pane" id="blog3">
+                  <h2>Tattoo convention club</h2>
+                  <i class="fa fa-user"><span class="admin">by admin</span></i>
+                    <i class="fa fa-tag"><span class="tag">event, tattoos, convetions</span></i>
+                    <img src="images/blog-img3.jpg" alt="Night Club Event" />
+                    <div class="overlay clearfix">
+                      <div class="overlay-inner">
+                            <h3><span class="bold">Beautiful tattoos</span> - source: Image Bigshok</h3>
+                      </div>
+                    </div>
+                    <h3>We introduce many new Trends</h3>
+                    <p>Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.Nulla or narm mus vel ultricies.</p>
+                    <div class="share">
+                      <h4>Share this article:</h4>
+                        <p class="clearfix">
+                            <a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                            <a href="http://www.google.com"><i class="fa fa-google"></i></a>
+                            <a href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+                            <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                            <a href="http://www.rss.com"><i class="fa fa-rss"></i></a>
+                        </p>
+                    </div>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!-- end blogs -->
+
+<!-- Make-Reservation -->
+<div id="reservation" class="module parallax parallax-reservation">
+    <div class="container">
+        <div class="row">
+            <h1 class="wow fadeInUp" data-wow-duration="1s">Make Reservation</h1> 
+            <p class="wow fadeIn" data-wow-duration="1s">Would you liked to make reservation?</p>
+            <div class="col-sm-12 reservation-form">
+                <form class="form-horizontal" method="post">
+                  <div class="form-group">
+                    <label for="name" class="col-sm-5 col-xs-12 control-label">What's your full name?</label>
+                    <div class="col-sm-7 col-xs-12 input-field">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="name" placeholder="David Smith" onchange="checkField();" required>
+                          <span class="input-group-addon"><i class="fa fa-user fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="col-sm-5 col-xs-12 control-label">What's your phone number?</label>
+                    <div class="col-sm-5 col-xs-12 input-field">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="phone" placeholder="345-555-2398" onchange="checkField();" required>
+                          <span class="input-group-addon phone-icon"><i class="fa fa-mobile fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="people" class="col-sm-5 col-xs-12 control-label">For how many people?</label>
+                    <div class="col-sm-3 col-xs-12 input-field">
+                        <div class="input-group">
+                          <select name="peoples" id="people" class="form-control">
+                              <option value="">6+</option>
+                          </select>
+                          <span class="input-group-addon"><i class="fa fa-users fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="date" class="col-sm-5 col-xs-12 control-label">For what date?</label>
+                    <div class="col-sm-4 col-xs-12 input-field">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="date" placeholder="23/07/15" onchange="checkField();" required>
+                          <span class="input-group-addon"><i class="fa fa-calendar fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="time" class="col-sm-5 col-xs-12 control-label">What time?</label>
+                    <div class="col-sm-3 col-xs-12 input-field">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="time" name="concert-time" placeholder="04:30 pm" onchange="checkField();" required>
+                          <span class="input-group-addon"><i class="fa fa-clock-o fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="location" class="col-sm-5 col-xs-12 control-label">Where would you like to stay?</label>
+                    <div class="col-sm-6 col-xs-12 input-field">
+                        <div class="input-group">
+                          <select id="location" name="location" class="form-control">
+                              <option value="">Table for 6, club</option>
+                          </select>
+                          <span class="input-group-addon"><i class="fa fa-cube fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10 text-center">
+                      <button type="submit" class="btn btn-default btn-lg btn-booking" name="booking" value="booking">Book me up!</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Make-Reservation -->
+
+    <!-- Map -->
+    <div class="container-fluid margin-top">
+        <div class="row map wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" data-wow-offset="200">
+             <div id="map-canvas">
+               <h1 class="sr-only">Map</h1>
+             </div>
+        </div>
+    </div>
+        <!-- Map -->
+
+
+<!-- footer -->
+<div id="footer" class="module parallax parallax-footer">    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 text-center footer-info wow fadeInUp" data-wow-duration="1s">
+                <img src="images/footer-logo.png" alt="Logo">
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-map-marker fa-3x"></i></p>
+                <p class="footer-text">San Francisso, 13 Ave. Street, Twin Peaks New Yourk city.</p>
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-envelope fa-3x"></i></p>
+                <p class="footer-text">
+                    <a href="#">info@samrtnightclub.com</a>
+                    <a href="#">smartnightclub@info.com</a>
+                </p> 
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-phone fa-3x"></i></p>
+                <p class="footer-text">
+                    0021-2587-3659-51
+                    <br>
+                    0021-2587-3659-53
+                </p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="social affix-social">
+                <a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="http://www.google.com"><i class="fa fa-google fa-2x"></i></a>
+                <a href="http://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="http://www.pinterest.com"><i class="fa fa-pinterest fa-2x"></i></a>
+                <a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="http://www.rss.com"><i class="fa fa-rss fa-2x"></i></a>
+                <a href="http://www.skype.com"><i class="fa fa-skype fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- footer -->
+
+<div id="copy-right">
+    <div class="container">
+        <div class="row text-center">
+            <p>CopyRight &copy; 2015 Smart Night Club, Theme all rights reserved, Design and Develop by <a href="www.ewebcraft.com">Ewebcraft</a></p>
+        </div>
+    </div>
+</div>
+
+    
+<script src="scripts/wow.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.smoothwheel.js"></script>
+<script type="text/javascript" src="scripts/respond.js"></script>
+<script type="text/javascript" src="scripts/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="scripts/jquery.bxslider.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="scripts/jquery.mixitup.js"></script>
+
+<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+<script type="text/javascript" src="scripts/jquery.plugin.js" ></script>
+<script type="text/javascript" src="scripts/jquery.countdown.min.js" ></script>
+<script type="text/javascript" src="scripts/modernizr.custom.97074.js"></script>
+<script type="text/javascript" src="scripts/jquery.hoverdir.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
