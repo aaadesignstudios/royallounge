@@ -82,7 +82,7 @@ img{border:none;}
 .loader,
 .loader:before,
 .loader:after {
-  background: #ff2a70;
+  background: #c5b279;
   width: 1em;
   height: 4em;
   position: absolute;
@@ -226,7 +226,7 @@ div.module.parallax-header {
 	top: 50%;
 }
 .owl-theme .owl-controls .owl-buttons div:hover {
-	background: #ff2a70;
+	background: #c5b279;
 	border-color: #fd1561;
 }
 
@@ -294,7 +294,7 @@ div.module.parallax-header {
 }
 .btn-play .play-button {
 	background: #fff;
-	color: #ff2a70;
+	color: #c5b279;
 	width: 140px;
 	height: 140px;
 	line-height: 140px;
@@ -335,7 +335,7 @@ div.module.parallax-header {
    bottom: 0;
    left: 0;
    width: 100%;
-   background:#ff2a70;
+   background:#c5b279;
    border-top-left-radius: 25px;
    border-top-right-radius: 25px;
 }
@@ -378,7 +378,7 @@ div.module.parallax-header {
 }
 .btn-concert-registration {
    padding: 20px;
-   background: #ff2a70;
+   background: #c5b279;
    color: #fff;
    text-transform: uppercase;
    font-family: 'Oswald';
@@ -391,7 +391,7 @@ div.module.parallax-header {
    transition: all 0.9s ease-in-out;
 }
 .btn-concert-registration:hover {
-	color: #ff2a70;
+	color: #c5b279;
 	background: #fff;
 }
 #banner .banner-inner p{
@@ -418,7 +418,7 @@ div.module.parallax-header {
 #banner .banner-inner a.btn:hover{
    color:#000;
    border:1px solid #fd1561;
-   background-color:rgba(255,42,112,0.7);
+   background-color:rgba(197,178,121,0.7);
 }
 .btn-concert-register, .btn-concert-play {
   margin-top: 80px;
@@ -499,11 +499,11 @@ div.module.parallax-header {
   -ms-transition: all 0.3s ease;	
 }
 .navbar-nav > li.active > a{
-	color:#ff2a70 !important;
+	color:#c5b279 !important;
 	background-color:transparent !important;
 }
 .navbar-nav > li:hover > a {
-	color:#ff2a70 !important;
+	color:#c5b279 !important;
 	background-color:transparent !important;	
 }
 .navbar-nav > li:hover, .navbar-nav > .active {
@@ -525,7 +525,7 @@ div.module.parallax-header {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #ff2a70;
+  background: #c5b279;
   height: 3px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -592,7 +592,7 @@ div.module.parallax-header {
 	padding:80px 0 80px 0;	
 }
 #services h1{
-	color:#ff2a70;
+	color:#c5b279;
 	font-size:45px;	
 	font-family: 'Oswald';
 }
@@ -626,7 +626,7 @@ div.module.parallax-header {
 	top:0;
 	left:-200px;
 	 display: inline-block; 	
-	border-right:1px solid #ff2a70;
+	border-right:1px solid #c5b279;
 	height:100%;
 	-webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -638,7 +638,7 @@ div.module.parallax-header {
 	left: 0;
 }
 #services .servicebox .servicebox-inner h2{
-	color:#ff2a70;
+	color:#c5b279;
 	font-family: 'Open Sans';
 	font-size:24px;	
 	padding-bottom:15px;
@@ -694,7 +694,7 @@ div.module.parallax-header {
 .tabs-style-linebox nav li {
 	padding: 0.5em 1.0em 0.5em 1.0em;
 	color: #74777b;
-	border-bottom: 1px solid #ff2a70;
+	border-bottom: 1px solid #c5b279;
 	font-weight: 700;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
@@ -703,15 +703,15 @@ div.module.parallax-header {
 .tabs-style-linebox nav li:hover,
 .tabs-style-linebox nav li:focus {
 	color: #fff;
-	border-color: #ff2a70;
+	border-color: #c5b279;
   cursor: pointer;
 }
 
 .tabs-style-linebox nav li.active {
 	color: #fff;
-	border-bottom: 2px solid #ff2a70;
+	border-bottom: 2px solid #c5b279;
   cursor: default;
-  background: #ff2a70;
+  background: #c5b279;
 }
 /* Sweep To Top */
 .hvr-sweep-to-top {
@@ -737,7 +737,7 @@ div.module.parallax-header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ff2a70;
+  background: #c5b279;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -787,7 +787,7 @@ div.module.parallax-header {
 .gallery-photo-item .overlay{
  	 position: absolute;
    background-color: transparent;
-   background-color: rgba(255,42,112, 0.7);
+   background-color: rgba(197,178,121, 0.7);
    width: 100%;
    height: 100%;
    overflow: hidden;
@@ -826,7 +826,7 @@ div.module.parallax-header {
 	position:relative;	
 }
 #club-form h1{
-	color:#ff2a70;
+	color:#c5b279;
 	font-size:45px;
 	font-family: 'Oswald';	
 }
@@ -849,7 +849,7 @@ div.module.parallax-header {
 	border:1px solid #b4b4b4;
 }
 #club-form .submit{
-	background-color:#ff2a70;;
+	background-color:#c5b279;;
 	border:0;
 	color:#fff;
 	font-family: 'PT Sans';
@@ -896,7 +896,7 @@ div.module.parallax-events {
 	color:#fff;
 	line-height:48px;
 	padding:20px 0;
-	background-color:#ff2a70;
+	background-color:#c5b279;
 }
 #events .event-box-left h3{
 	font-family: 'Open Sans';
@@ -906,7 +906,7 @@ div.module.parallax-events {
 	background-color:#000000;
 }
 #events .event-box-left p{
-	background-color:#ff2a70;
+	background-color:#c5b279;
 	color:#fff;
 	padding:8px;
 	font-weight:bold;
@@ -944,7 +944,7 @@ div.module.parallax-events {
 #events span.slider-prev{
 	width:25px;
 	height:15px;
-	background-color:#ff2a70;
+	background-color:#c5b279;
 	padding:10px;	
 }
 #events .bx-wrapper .bx-pager.bx-default-pager a {
@@ -952,7 +952,7 @@ div.module.parallax-events {
 	width:50px !important;	
 }
 #events .bx-wrapper .bx-pager.bx-default-pager a:hover, #events .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: none repeat scroll 0 0 #ff2a70 !important;
+    background: none repeat scroll 0 0 #c5b279 !important;
 }
 #events .bx-wrapper .bx-pager.bx-default-pager a {
     background: none repeat scroll 0 0 #fff !important;
@@ -1001,7 +1001,7 @@ div.module.parallax-profiles {
 	float:left;	
 }
 #club-profiles .profle-box-right .profile-info p{
-	color:#ff2a70;
+	color:#c5b279;
 	font-size:16px;
 	font-family: 'PT Sans';
 	padding-bottom:0;
@@ -1016,7 +1016,7 @@ div.module.parallax-profiles {
 	padding:100px 0;	
 }
 #blogs h1{
-	color:#ff2a70;
+	color:#c5b279;
 	font-size:45px;
 	font-family: 'Oswald';
 	text-align:center;
@@ -1029,7 +1029,7 @@ div.module.parallax-profiles {
 	padding-bottom:75px;
 }
 .borderLeft{
-	border-left: 1px solid #ff2a70;
+	border-left: 1px solid #c5b279;
     height: 260px;
     left: 149px;
     position: absolute;
@@ -1052,9 +1052,9 @@ div.module.parallax-profiles {
 	font-size:30px;	
 }
 #blogs .event-time .fa{
-	color:#ff2a70;
+	color:#c5b279;
 	font-size:20px;
-	border:1px solid #ff2a70;
+	border:1px solid #c5b279;
 	border-radius:50%;
 	width:40px;
 	height:40px;
@@ -1085,12 +1085,12 @@ div.module.parallax-profiles {
 }
 #blogs .event-detail .fa-long-arrow-right{
 	float:right;
-	color:#ff2a70;
+	color:#c5b279;
 	font-size:20px;
 	line-height:5px;	
 }
 #blogs .event-detail h2 a{
-	color:#ff2a70;
+	color:#c5b279;
 	font-size:24px;
 	display:block;
 	font-family: 'PT Sans';
@@ -1114,7 +1114,7 @@ div.module.parallax-profiles {
 	width:58%;	
 }
 #blogs .tab-content h2{
-	color:#ff2a70;
+	color:#c5b279;
 	font-family: 'PT Sans';
 	font-size:30px;
 	line-height:25px;
@@ -1153,12 +1153,12 @@ div.module.parallax-profiles {
 	padding:5px 3px;
 }
 #blogs .tab-content .share p a:hover{
-	background-color:#ff2a70;
+	background-color:#c5b279;
 	padding:5px 3px;
 }
 #blogs .tab-content .share p a .fa{
-	border:1px solid #ff2a70;
-	color:#ff2a70;	
+	border:1px solid #c5b279;
+	color:#c5b279;	
 	padding:5px 6px;
 	width:25px;
 	height:25px;
@@ -1166,7 +1166,7 @@ div.module.parallax-profiles {
 }
 #blogs .tab-content .share p a .fa:hover{
 	color:#fff;
-	border:1px solid #ff2a70;
+	border:1px solid #c5b279;
 }
 span.blod{
 	font-weight:bold;	
@@ -1190,7 +1190,7 @@ span.blod{
 }
 #blogs .tab-content .overlay .fa-expand{
 	color:#fff;
-	background-color:#ff2a70;
+	background-color:#c5b279;
 	border-radius:50%;
 	width:40px;
 	height:40px;
@@ -1201,7 +1201,7 @@ span.blod{
 }
 #blogs .tab-content .tab-pane .fa-user,
 #blogs .tab-content .tab-pane .fa-tag{
-	color:#ff2a70;
+	color:#c5b279;
 }
 #blogs .tab-content .tab-pane span.admin{
 	margin-right:20px;
@@ -1226,7 +1226,7 @@ span.blod{
   top:-35px;
 	left:140px;
 	height:35px;
-	border:1px solid #ff2a70;
+	border:1px solid #c5b279;
 	width:35px;
 	padding-left:7px;	
 }
@@ -1237,7 +1237,7 @@ span.blod{
   position: absolute;
 	left:140px;
 	height:35px;
-	border:1px solid #ff2a70;
+	border:1px solid #c5b279;
 	width:35px;
 	padding-left:7px;	
 }
@@ -1331,7 +1331,7 @@ div.module.parallax-reservation {
 .reservation-form .input-group-addon {
 	border-radius: 0px;
 	border:none;
-	background: #ff2a70;
+	background: #c5b279;
 	color: #fff;
 }
 .reservation-form .input-group-addon.phone-icon {
@@ -1347,7 +1347,7 @@ div.module.parallax-reservation {
 .btn-booking {
 	border-radius: 0px;
 	border:none;
-	background: #ff2a70;
+	background: #c5b279;
 	color: #fff;
 	font-family: 'PT Sans';
 	font-size: 30px;
@@ -1384,7 +1384,7 @@ div.module.parallax-footer {
 	color: #fff;
 }
 #footer .fa {
-	color: #ff2a70;
+	color: #c5b279;
 }
 #footer .social{
 	margin-top: 50px;
@@ -1412,7 +1412,7 @@ div.module.parallax-footer {
   -ms-transition: all 0.5s ease;
 }
 #footer .social a .fa:hover{
-color: #ff2a70;
+color: #c5b279;
 }
 
 #copy-right {
@@ -1514,7 +1514,7 @@ color: #ff2a70;
 }
 
 .profile-social li {
-  background-color: #ff2a70;
+  background-color: #c5b279;
   display: block;
   height: 4em;
   line-height: 4em;
