@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>
+  {% if page.title %}
+    {{ page.title }}
+  {% else %}
+    Night Club
+  {% endif %}
+</title>
+ 
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" />
+<link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+</head>
+
+<body id="wrapper" data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+<div id="loader">
+    <div class="loader">        
+    </div>
+</div>
+<!-- About And Information 
+
+Original Default Color: #ff2a70
+Replaced Color:  #c5b279
+
+Bright Gold:
+#fcd928
+(252,217,40)
+
+Original Overlay Color background-color: rgba(255,42,112, 0.7);
+Replaced Color: rgba(197,178,121, 0.7)
+
+
+-->
+
+<!-- start banner -->
+<div id="banner" class="module parallax parallax-header">
+    <div class="container">
+        <div class="row">
+            <div class="banner-inner">                
+                <div id="header-slider" class="owl-carousel">              
+                    <div class="item col-xs-12">
+                        <h1 class="title title-lines editable"><span>10 March, 2016</span></h1>
+                        <h3 class="subtitle editable">Live Concert in France</h3>
+                        <a class="btn scroll btn-concert-register" href="#reservation">Register</a>
+                        <a class="btn btn-concert-play" href="http://vimeo.com/8245346" data-gal="prettyPhoto">Watch Video</a>
+                    </div>
+                     
+                    <div class="item col-xs-12">
+                            <div class="title title-lines-full">
+                                <hr class="hr-line" />
+                                <hr class="hr-line" />
+                                <h1 class="editable"><span>10 March, 2016</span></h1>
+                                <h3 class="subtitle editable">Live Concert in France</h3>
+                                <hr class="hr-line" />
+                                <hr class="hr-line" />
+                            </div>
+                        </div>
+                    <div class="item col-xs-12">
+                        <h1 class="title title-lines editable"><span>10 March, 2016</span></h1>
+                        <h3 class="subtitle editable">Live Concert in France</h3>
+                        <a class="btn-play" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
+                          <span class="play-button">
+                            <i class="fa fa-play fa-4x"></i>
+                          </span>
+                        </a>
+                    </div>
+                    <div class="item col-xs-12">
+                        <h1 class="title title-lines editable"><span>10 March, 2016</span></h1>
+                        <h3 class="subtitle editable">Live Concert in France</h3>
+                        <div id="defaultCountdown" class="col-sm-12"></div>
+                            <script type="text/javascript">
+                                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                            </script>
+                            <script type="text/javascript">
+                                var pageTracker = _gat._getTracker("UA-4715900-1");
+                                pageTracker._initData();
+                                pageTracker._trackPageview();
+                            </script>
+                        <a class="btn scroll" href="#reservation">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row banner-bottom hidden-xs">
+          
+        </div>
+    </div>
+</div>
+<!-- end banner -->
+
+<!-- start header -->
+<header id="header" data-spy="affix" data-offset-top="2">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-2 col-sm-3 col-xs-12 text-center logo">
+            	<a href="index.html"><img class="logo-img wow fadeIn" data-wow-duration="3s" src="images/logo.png" alt="Night Club logo" /></a>
+            </div>
+            <div class="col-md-10 col-sm-9 col-xs-12 header-right affix-header-right">
+            	<nav class="navbar navbar-default col-xs-12 text-center">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="hvr-underline-from-center active"><a href="#banner" class="scroll"> HOME </a></li>
+                            <li class="hvr-underline-from-center"><a href="#gallery" class="scroll"> GALLERY </a></li>
+                            <li class="hvr-underline-from-center"><a href="#events" class="scroll"> EVENTS </a></li>
+                            <li class="hvr-underline-from-center"><a href="#reservation" class="scroll"> CONTACT </a></li>
+                        </ul>
+                   </div>
+                </nav>
+               </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+    {{ content }}
+
+<!-- footer -->
+<div id="footer" class="module parallax parallax-footer">    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 text-center footer-info wow fadeInUp" data-wow-duration="1s">
+                <img src="images/footer-logo.png" alt="Logo" />
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-map-marker fa-3x"></i></p>
+                <p class="footer-text editable">San Francisso, 13 Ave. Street, Twin Peaks New Yourk city.</p>
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-envelope fa-3x"></i></p>
+                <p class="footer-text editable"><a href="#">info@samrtnightclub.com</a> <a href="#">smartnightclub@info.com</a></p> 
+            </div>
+            <div class="col-md-3 col-sm-4 text-center footer-info wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                <p><i class="fa fa-phone fa-3x"></i></p>
+                <p class="footer-text editable">0021-2587-3659-51<br />0021-2587-3659-53</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="social affix-social">
+                <a href="http://www.facebook.com"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="http://www.google.com"><i class="fa fa-google fa-2x"></i></a>
+                <a href="http://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="http://www.pinterest.com"><i class="fa fa-pinterest fa-2x"></i></a>
+                <a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="http://www.rss.com"><i class="fa fa-rss fa-2x"></i></a>
+                <a href="http://www.skype.com"><i class="fa fa-skype fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- footer -->
+
+<div id="copy-right">
+    <div class="container">
+        <div class="row text-center">
+            <p>CopyRight &copy; 2015 Royal Lounge, Theme all rights reserved. </p>
+        </div>
+    </div>
+</div>
+
+    
+<script src="scripts/wow.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.smoothwheel.js"></script>
+<script type="text/javascript" src="scripts/respond.js"></script>
+<script type="text/javascript" src="scripts/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="scripts/jquery.bxslider.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="scripts/jquery.mixitup.js"></script>
+
+<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+<script type="text/javascript" src="scripts/jquery.plugin.js"></script>
+<script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="scripts/modernizr.custom.97074.js"></script>
+<script type="text/javascript" src="scripts/jquery.hoverdir.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
