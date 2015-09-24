@@ -378,57 +378,25 @@ Replaced Color: rgba(197,178,121, 0.7)
         	<div class="event-inner col-sm-12 text-center">
             	<h1 class="wow fadeInUp editable" data-wow-duration="1s">EVENTS OF THE MONTH</h1>
                     <ul class="bxslider one">
-                        <li>
+                       {% for service in site.services %}
+						<li>
                             <div class="event-box">
                                 <div class="event-box-left clearfix">
-                                    <h2>29 <br /><span class="month"> APRIL</span></h2>
-                                    <h3>11:00 PM</h3>
+                                    <h2>{{ event.day }}<br /><span class="month">{{ event.month }}</span></h2>
+                                    <h3>{{ event.time }}</h3>
                                     <p><i class="fa fa-map-marker"></i><br />
-                                        CITY PLAZA, <br />NEW YORK, AMERICA
+                                        {{ event.location }}
                                     </p>
                                 </div>
                                 <div class="event-box-right clearfix">
-                                    <img class="img-responsive" src="images/event-img1.jpg" alt="Night Club Event" />
+                                    <img class="img-responsive" src="{{ event.image_path }}" alt="{{ event.title }}" />
                                 </div>
                                 <div class="event-box-bottom text-left clearfix">
-                                    <h2>Fire and ice dumparter party!</h2>
+                                    <h2>{{ event.title }}</h2>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="event-box">
-                                <div class="event-box-left clearfix">
-                                    <h2>07 <br /><span class="month"> AUGUST</span></h2>
-                                    <h3>12:20 AM</h3>
-                                    <p><i class="fa fa-map-marker"></i><br />
-                                        CITY PLAZA, <br />NEW YORK, AMERICA
-                                    </p>
-                                </div>
-                                <div class="event-box-right clearfix">
-                                    <img class="img-responsive" src="images/event-img2.jpg" alt="Night Club Event" />
-                                </div>
-                                <div class="event-box-bottom text-left clearfix">
-                                    <h2>Proudly Present owner theme event</h2>
-                                </div>
-                          </div>
-                      </li>
-                       <li>
-                            <div class="event-box">
-                                <div class="event-box-left clearfix">
-                                    <h2>21 <br /><span class="month"> October</span></h2>
-                                    <h3>03:10 AM</h3>
-                                    <p><i class="fa fa-map-marker"></i><br />
-                                        CITY PLAZA, <br />NEW YORK, AMERICA
-                                    </p>
-                                </div>
-                                <div class="event-box-right clearfix">
-                                    <img class="img-responsive" src="images/event-img3.jpg" alt="Night Club Event" />
-                                </div>
-                                <div class="event-box-bottom text-left clearfix">
-                                    <h2>Proudly Present owner theme event</h2>
-                                </div>
-                          </div>
-                      </li>
+					{% endfor %}
                  </ul>
             </div>
         </div>
