@@ -1,8 +1,8 @@
 ---
 title: Fire and Ice Dumparter Party
-image_path: ""
-day: 0
-month: October
-time: ""
-location: "SAMPLE, <br />SAMPLE, SAMPLE"
+image_path: /images/event-img1.jpg
+day: 29
+month: November
+time: "6:00pm"
+location: "Plaza, <br />Atlanta, GA"
 ---
