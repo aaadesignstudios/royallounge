@@ -1,5 +1,5 @@
 ---
 title: Image 03
-image_path: donotdelete
-thumbnail_path: donotdelete
+image_path: /images/gallery-small-img-3.jpg
+thumbnail_path: /images/gallery-small-img-3.jpg
 ---
