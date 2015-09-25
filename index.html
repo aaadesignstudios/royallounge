@@ -254,6 +254,10 @@ title: Home Page
             	<h1 class="wow fadeInUp editable" data-wow-duration="1s">EVENTS OF THE MONTH</h1>
                     <ul class="bxslider one">
                     {% for event in site.events %}
+                    {% if event.title == 'template' %}
+						<!-- DON'T SHOW -->
+                    {% else %}
+                    	<!-- SHOW EVENT-->
 						<li>
                             <div class="event-box">
                                 <div class="event-box-left clearfix">
@@ -271,6 +275,7 @@ title: Home Page
                                 </div>
                             </div>
                         </li>
+                    {% endif %}
 					{% endfor %}
                        
                  </ul>
