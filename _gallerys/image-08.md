@@ -1,5 +1,5 @@
 ---
 title: Image 08
-image_path: donotdelete
-thumbnail_path: donotdelete
+image_path: /images/gallery-img8.jpg
+thumbnail_path: /images/gallery-small-img-8.jpg
 ---
