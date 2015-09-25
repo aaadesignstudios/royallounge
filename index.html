@@ -287,7 +287,9 @@ title: Home Page
         <div class="row">
             <h1 class="wow fadeInUp editable" data-wow-duration="1s">Make Reservation</h1> 
             <div class="col-sm-12 reservation-form">
-                <form class="form-horizontal" action="." method="post">
+            <?php require_once('./lib/config.php'); ?>
+
+                <form class="form-horizontal" action="lib/charge.php" method="POST">
                   <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
                   <div class="form-group">
                     <label for="name" class="col-sm-5 col-xs-12 control-label">Name?</label>
@@ -359,8 +361,11 @@ title: Home Page
                      <script src="https://checkout.stripe.com/checkout.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
                      <script>
+					 
+					 
   var handler = StripeCheckout.configure({
-    key: 'pk_test_3vR71NY1dwikCjlbxhT30UrO',
+	  
+    key: <?php echo $stripe['publishable_key']; ?>,
     image: '/images/logo.png',
     locale: 'auto',
     token: function(token) {
