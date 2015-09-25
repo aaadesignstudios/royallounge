@@ -60,36 +60,17 @@ title: Home Page
            <div class="gallery-photo-grid">
               <div class="gallery-photos">
                  <div class="gallery-photos-thumb">
-                    <div class="gallery-photo-item mix danceParty wow fadeIn">
-                       <a class="pretty-photo" href="images/gallery-img1.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                    
+                    {% for gallery in site.gallerys %}
+                    {% if gallery.title == 'donotdelete' %}
+						<!-- DON'T SHOW -->
+                    {% else %}
+                    	<!-- SHOW EVENT-->
+                    	{% if gallery.type == 'video' %}
+						<div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
+                       <a class="pretty-photo" href="{{ gallery.image_path }}" data-gal="prettyPhoto[gallery-photo-thumb]">
                           <div class="photo-thumb">
-                             <img src="images/gallery-small-img-1.jpg" alt="image-1" />
-                          </div>
-                          <div class="overlay">
-                            <span class="gallery-icon">
-                              <i class="fa fa-search-plus fa-2x">
-                              </i>
-                            </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix danceParty wow fadeIn" data-wow-delay="0.2s">
-                       <a class="pretty-photo" href="images/gallery-img2.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-2.jpg" alt="image-2" />
-                          </div>
-                          <div class="overlay">
-                            <span class="gallery-icon">
-                               <i class="fa fa-search-plus fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.4s">
-                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-3.jpg" alt="Video" />
+                             <img src="{{ gallery.thumbnail_path }}" alt="{{ gallery.title }}" />
                           </div>
                           <div class="overlay">
                              <span class="gallery-icon">
@@ -99,36 +80,12 @@ title: Home Page
                           </div>
                         </a>
                     </div>
-                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.6s">
-                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-4.jpg" alt="video" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-play fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.1s">
-                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-5.jpg" alt="video" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-play fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
+                    {% else %}
+                    
                     <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
-                       <a class="pretty-photo" href="images/gallery-img6.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
+                       <a class="pretty-photo" href="{{ gallery.image_path }}" data-gal="prettyPhoto[gallery-photo-thumb]">
                           <div class="photo-thumb">
-                             <img src="images/gallery-small-img-6.jpg" alt="image-3" />
+                             <img src="{{ gallery.thumbnail_path }}" alt="{{ gallery.title }}" />
                           </div>
                           <div class="overlay">
                              <span class="gallery-icon">
@@ -138,84 +95,11 @@ title: Home Page
                           </div>
                         </a>
                     </div>
-                    <div class="gallery-photo-item mix danceParty wow fadeIn" data-wow-delay="0.4s">
-                       <a class="pretty-photo" href="images/gallery-img7.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-7.jpg" alt="image-4" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-search-plus fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix danceParty wow fadeIn" data-wow-delay="0.6s">
-                       <a class="pretty-photo" href="images/gallery-img8.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-8.jpg" alt="image-5" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-search-plus fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
-                       <a class="pretty-photo" href="images/gallery-img9.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-9.jpg" alt="image-6" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-search-plus fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.4s">
-                       <a class="pretty-photo" href="images/gallery-img10.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-10.jpg" alt="image-7" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-search-plus fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.5s">
-                       <a class="pretty-photo" href="images/gallery-img11.jpg" data-gal="prettyPhoto[gallery-photo-thumb]">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-11.jpg" alt="image-8" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-search-plus fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
-                    <div class="gallery-photo-item mix videos wow fadeIn" data-wow-delay="0.6s">
-                       <a class="pretty-photo" href="http://vimeo.com/8245346" data-gal="prettyPhoto">
-                          <div class="photo-thumb">
-                             <img src="images/gallery-small-img-12.jpg" alt="Video" />
-                          </div>
-                          <div class="overlay">
-                             <span class="gallery-icon">
-                               <i class="fa fa-play fa-2x">
-                               </i>
-                             </span>
-                          </div>
-                        </a>
-                    </div>
+                    
+                    {% endif %}
+                    {% endif %}
+					{% endfor %}
+                    
                  </div>
               </div>
            </div>
