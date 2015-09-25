@@ -1,5 +1,5 @@
 ---
-title: Image 05
+title: Video 03
 image_path: /images/gallery-small-img-5.jpg
 thumbnail_path: /images/gallery-small-img-5.jpg
 image_type: video
