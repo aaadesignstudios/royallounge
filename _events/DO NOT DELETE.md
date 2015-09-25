@@ -1,8 +1,8 @@
 ---
-title: template
-image_path: 
-day: 00
+title: DONOTDELETE
+image_path: ""
+day: 0
 month: October
-time: 00:00pm
-location: SAMPLE, <br />SAMPLE, SAMPLE
+time: ""
+location: "SAMPLE, <br />SAMPLE, SAMPLE"
 ---
