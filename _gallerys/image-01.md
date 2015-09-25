@@ -1,5 +1,5 @@
 ---
 title: Image 01
-image_path: donotdelete
-thumbnail_path: donotdelete
+image_path: /images/gallery-img1.jpg
+thumbnail_path: /images/gallery-small-img-1.jpg
 ---
