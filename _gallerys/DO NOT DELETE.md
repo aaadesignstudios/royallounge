@@ -2,6 +2,6 @@
 title: donotdelete
 image_path: donotdelete
 thumbnail_path: donotdelete
-imagetype: image
-videourl: donotdelete
+image_type: image
+video_url: donotdelete
 ---

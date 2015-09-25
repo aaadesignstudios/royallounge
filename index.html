@@ -66,9 +66,9 @@ title: Home Page
 						<!-- DON'T SHOW -->
                     {% else %}
                     	<!-- SHOW EVENT-->
-                    	{% if gallery.imagetype == 'video' %}
+                    	{% if gallery.image_type == 'video' %}
 						<div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
-                       <a class="pretty-photo" href="{{ gallery.videourl }}" data-gal="prettyPhoto[gallery-photo-thumb]">
+                       <a class="pretty-photo" href="{{ gallery.video_url }}" data-gal="prettyPhoto[gallery-photo-thumb]">
                           <div class="photo-thumb">
                              <img src="{{ gallery.thumbnail_path }}" alt="{{ gallery.title }}" />
                           </div>
