@@ -287,10 +287,9 @@ title: Home Page
         <div class="row">
             <h1 class="wow fadeInUp editable" data-wow-duration="1s">Make Reservation</h1> 
             <div class="col-sm-12 reservation-form">
-
-                <form class="form-horizontal" action="https://royal-lounge.herokuapp.com/" method="POST">
-                  <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+<noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
                   <div class="form-group">
+                <form class="form-horizontal" action="https://royal-lounge.herokuapp.com/" method="POST">
                     <label for="name" class="col-sm-5 col-xs-12 control-label">Name?</label>
                     <div class="col-sm-7 col-xs-12 input-field">
                       <div class="input-group">
@@ -388,9 +387,10 @@ title: Home Page
     handler.close();
   });
 </script>
+ <input name="amount" value="2000" type="hidden">
+
                     </div>
                   </div>
-                  <input name="amount" value="2000" type="hidden">
                 </form>
             </div>
         </div>
