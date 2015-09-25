@@ -1,8 +1,8 @@
 ---
-title: Grand Opening
-image_path: ""
-day: 0
+title: "Grand Opening!!!"
+image_path: /images/gallery-img10.jpg
+day: 2
 month: October
-time: ""
-location: "SAMPLE, <br />SAMPLE, SAMPLE"
+time: "9:00pm"
+location: "Plaza, <br />Buckhead, GA"
 ---
