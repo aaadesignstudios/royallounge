@@ -288,7 +288,7 @@ title: Home Page
             <h1 class="wow fadeInUp editable" data-wow-duration="1s">Make Reservation</h1> 
             <div class="col-sm-12 reservation-form">
 
-                <form class="form-horizontal" action="https://royal-lounge.herokuapp.com/" method="POST">
+                <form class="form-horizontal" action="" method="POST">
                   <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
                   <div class="form-group">
                     <label for="name" class="col-sm-5 col-xs-12 control-label">Name?</label>
@@ -355,21 +355,7 @@ title: Home Page
                   </div>
                   <div class="form-group">
                     <div class="col-sm-10 text-center">
-                    
-      <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_3vR71NY1dwikCjlbxhT30UrO"
-    data-amount="2000"
-    data-name="Demo Site"
-    data-description="2 widgets ($20.00)"
-    data-image="/128x128.png"
-    data-locale="auto">
-  </script>
-      <input name="amount" value="2000" type="hidden">
 
-                    </div>
-                  </div>
-<!--
                       <button type="submit" id="customButton" class="btn btn-default btn-lg btn-booking" name="booking" value="booking">Book my Reservation</button>
 
                     </div>
@@ -406,9 +392,20 @@ title: Home Page
   });
 </script>
 <input name="amount" value="2000" type="hidden">
-
--->
                 </form>
+                <form action="https://royal-lounge.herokuapp.com/" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_3vR71NY1dwikCjlbxhT30UrO"
+    data-amount="2000"
+    data-name="Demo Site"
+    data-description="2 widgets ($20.00)"
+    data-image="/128x128.png"
+    data-locale="auto">
+  </script>
+      <input name="amount" value="2000" type="hidden">
+
+</form>
             </div>
         </div>
     </div>
