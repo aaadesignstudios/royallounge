@@ -1,8 +1,8 @@
 ---
 title: Dj Kevlar New Show
-image_path: ""
-day: 0
+image_path: /images/event-img3.jpg
+day: 25
 month: October
-time: ""
-location: "SAMPLE, <br />SAMPLE, SAMPLE"
+time: "11:00pm"
+location: "Plaza, <br />Atlanta, GA"
 ---
