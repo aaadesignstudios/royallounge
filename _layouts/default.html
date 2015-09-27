@@ -22,6 +22,43 @@
 <link rel="stylesheet" href="css/animate.css" />
 <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
 <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+<script>
+function fluxxor() {
+	// Price By Day
+var today = new Date();
+var day = today.getDay();
+var price = 50.00;
+
+if(day == 0){
+	// Day is Sunday
+	price = 10.00+price;
+
+	}
+else if(day == 1){
+	// Day is Monday
+	}
+else if(day == 2){
+	// Day is Tuesday
+	}
+else if(day == 3){
+	// Day is Wednsday
+	}
+else if(day == 4){
+	// Day is Thursday
+	}
+else if(day == 5){
+	// Day is Friday
+	price = 10.00+price;
+
+	}
+else if(day == 6){
+	// Day is Saturday
+	price = 10.00+price;
+	}
+	
+    document.getElementById("fluxPrice").setAttribute("data-item-price", price); 
+}
+</script>
 <link type="text/css"
   id="snipcart-theme"
   href="https://cdn.snipcart.com/themes/base/snipcart.min.css" 
