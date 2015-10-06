@@ -1,0 +1,394 @@
+---
+layout: default
+title: Home Page
+---
+<!-- start services -->
+<div id="services">
+	<div class="container">
+    	<div class="row">
+        	<div class="services-inner col-md-12 text-center">
+                <h1 class="wow fadeInUp editable" data-wow-duration="2s">ROYAL LOUNGE - LOUNGE &amp; RESTAURANT</h1>
+                <h2 class="wow fadeInUp editable" data-wow-duration="2s">Elevating Atlanta’s Lounge &amp; Restaurant with world class service, food, and drinks. </h2>
+                <p class="wow fadeInUp editable" data-wow-duration="2s">At Royal Lounge and Restaurant we offer you a unique experience like no other. Let our hostess, chefs, and bartenders pamper you with our unique blends of food, drinks, and hookahs while mingling with friends to the tunes of our popular and renown DJ.</p>
+                <div class="servicebox col-md-4 wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                	<img class="img-responsive" src="images/service-img1.jpg" alt="Night club service" />
+                    <div class="servicebox-inner text-left wow slideInLeft">
+                    	<img src="images/music.png" alt="Night Club Music" />
+                        <h2 class="editable">DJ&#39;S MUSIC</h2>
+                        <p class="editable">Nulla or narm mus vel ultric-<br />ies. Quisque ve odio nibh<br />Nulla or narm mus vel ultric-<br />ies. Quisque ve odio.</p>
+                    </div>
+                </div>
+                <div class="servicebox col-md-4 wow fadeIn" data-wow-delay="1.3s" data-wow-duration="2s">
+                	<img class="img-responsive" src="images/service-img2.jpg" alt="Night club service" />
+                    <div class="servicebox-inner text-left">
+                    	<img src="images/drink.png" alt="Night Club Music" />
+                        <h2 class="editable">DRINK BAR</h2>
+                        <p class="editable">Nulla or narm mus vel ultric-<br />ies. Quisque ve odio nibh<br />Nulla or narm mus vel ultric-<br />ies. Quisque ve odio.</p>
+                    </div>
+                </div>
+                <div class="servicebox col-md-4 wow fadeIn" data-wow-delay="1.6s" data-wow-duration="2s">
+                	<img class="img-responsive" src="images/service-img3.jpg" alt="Night club service" />
+                    <div class="servicebox-inner text-left">
+                    	<img src="images/restaurant.png" alt="Night Club Music" />
+                        <h2 class="editable">RESTAURANT</h2>
+                        <p class="editable">Nulla or narm mus vel ultric-<br />ies. Quisque ve odio nibh<br />Nulla or narm mus vel ultric-<br />ies. Quisque ve odio.</p>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!-- end services -->
+
+<!-- start gallery -->
+<div id="gallery" class="text-center">
+    <div class="container">
+       <div class="row text-center">
+         <div class="tabs tabs-style-linebox wow fadeInUp" data-wow-duration="2s">
+             <nav>    
+               <ul class="filters">
+                <li data-filter="all" class="hvr-sweep-to-top active filter "><span>All</span></li>
+                
+               </ul>
+             </nav>
+         </div>
+       </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row gallery text-center">
+        <div class="col-md-12 noPadding">
+           <div class="gallery-photo-grid">
+              <div class="gallery-photos">
+                 <div class="gallery-photos-thumb">
+                    
+                    {% for gallery in site.gallerys %}
+                    {% if gallery.title == 'donotdelete' %}
+						<!-- DON'T SHOW -->
+                    {% else %}
+                    	<!-- SHOW EVENT-->
+                    	{% if gallery.image_type == 'video' %}
+						<div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
+                       <a class="pretty-photo" href="{{ gallery.video_url }}" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="{{ gallery.thumbnail_path }}" alt="{{ gallery.title }}" />
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-play fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    {% else %}
+                    
+                    <div class="gallery-photo-item mix girlsPub wow fadeIn" data-wow-delay="0.2s">
+                       <a class="pretty-photo" href="{{ gallery.image_path }}" data-gal="prettyPhoto[gallery-photo-thumb]">
+                          <div class="photo-thumb">
+                             <img src="{{ gallery.thumbnail_path }}" alt="{{ gallery.title }}" />
+                          </div>
+                          <div class="overlay">
+                             <span class="gallery-icon">
+                               <i class="fa fa-search-plus fa-2x">
+                               </i>
+                             </span>
+                          </div>
+                        </a>
+                    </div>
+                    
+                    {% endif %}
+                    {% endif %}
+					{% endfor %}
+                    
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- end gallery -->
+
+<!-- subscribe form -->
+<div id="club-form">
+	<div class="container">
+    	<div class="row">
+        	<div class="club-form col-md-7 col-sm-6 text-center">
+            	<h1 class="wow fadeIn editable" data-wow-duration="1s">WANT THE LATEST PARTY NEWS?</h1>
+                <p class="wow fadeIn editable" data-wow-duration="1s">Subscribe to our newsletter and never miss Party again!</p>
+               <form action="https://royalloungeatlanta.us11.list-manage.com/subscribe/post?u=e642bb89375ba63dd7d3beca2&amp;id=139d182fca" method="post" id="subscribe-form" name="mc-embedded-subscribe-form" class="clearfix wow fadeIn" data-wow-duration="2s">
+                    <input type="email" name="EMAIL" placeholder="Enter your Email" required />
+                    <input type="submit" name="subscribe" class="submit submit-button" value="GO!" />
+                 </form>
+                 <p class="wow fadeIn editable" data-wow-delay="1s" data-wow-duration="1s">We&rsquo;ll never send unwanted spam. Promise.</p>
+            </div>
+            
+            <div class="club-form col-md-5 col-sm-6 hidden-xs wow fadeIn" data-wow-duration="3s">
+            	<img class="img-responsive" src="images/form-img.jpg" alt="Night Club Image" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end club top form -->
+
+<!-- Event of the month -->
+<div id="events" class="module parallax parallax-events">
+	<div class="container">
+    	<div class="row">
+        	<div class="event-inner col-sm-12 text-center">
+            	<h1 class="wow fadeInUp editable" data-wow-duration="1s">EVENTS OF THE MONTH</h1>
+                    <ul class="bxslider one">
+                    {% for event in site.events %}
+                    {% if event.title == 'DONOTDELETE' %}
+						<!-- DON'T SHOW -->
+                    {% else %}
+                    	<!-- SHOW EVENT-->
+						<li>
+                            <div class="event-box">
+                                <div class="event-box-left clearfix">
+                                    <h2>{{ event.day }}<br /><span class="month">{{ event.month }}</span></h2>
+                                    <h3>{{ event.time }}</h3>
+                                    <p><i class="fa fa-map-marker"></i><br />
+                                        {{ event.location }}
+                                    </p>
+                                </div>
+                                <div class="event-box-right clearfix">
+                                    <img class="img-responsive" src="{{ event.image_path }}" alt="{{ event.title }}" />
+                                </div>
+                                <div class="event-box-bottom text-left clearfix">
+                                    <h2>{{ event.title }}</h2>
+                                </div>
+                            </div>
+                        </li>
+                    {% endif %}
+					{% endfor %}
+                       
+                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Event of the month -->
+
+<!-- start club profiles -->
+<div id="club-profiles" class="module parallax parallax-profiles">
+	<div class="container">
+    	<div class="row">
+        	<h1 class="wow fadeInUp editable" data-wow-duration="1s">OUR DJ&#39;S</h1>
+            <div class="col-md-6 col-sm-12 profile-box wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+               <div class="col-md-6 col-sm-6 profile-box-left flip-container text-center">     
+                  <div class="flipper">         
+                    <div class="front" id="dj-1"> </div>          
+                    <div class="back text-center">              
+                        <ul class="profile-social">
+                            <li class="twitter">
+                                <a href="#" class="entypo-twitter">
+                                    <i class="fa fa-twitter fa-2x"></i>        
+                                </a>
+                            </li>
+                            
+                            <li class="instagram">
+                                <a href="#" class="entypo-instagram">
+                                    <i class="fa fa-instagram fa-2x"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>      
+                  </div>  
+                </div>
+                <div class="col-md-6 col-sm-6 profle-box-right clearfix">
+                    <h2>DJ Zadda</h2>
+                    <h3>Turnable master</h3>
+                    <p>
+                        Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.
+                    </p>
+                    <div class="profile-info text-center">
+                    	<!-- <img class="img-responsive" src="images/since.png" alt="Night Club" /> -->
+                       <div class="eq">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                       </div>
+                        <p>SINCE</p>
+                        <h3>2002</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                    	<img class="img-responsive" src="images/event.png" alt="Night Club" />
+                        <p>EVENT</p>
+                        <h3>1367</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                    	<img class="img-responsive" src="images/latest.png" alt="Night Club" />
+                        <p>LATEST</p>
+                        <h3>12:33</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 profile-box wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
+                <div class="col-md-6 col-sm-6 profile-box-left flip-container text-center">     
+                  <div class="flipper">         
+                    <div class="front" id="dj-2"> </div>          
+                    <div class="back text-center">              
+                        <ul class="profile-social">
+
+                             <li class="twitter">
+                                <a href="#" class="entypo-twitter">
+                                    <i class="fa fa-twitter fa-2x"></i>        
+                                </a>
+                            </li>
+                            
+                            <li class="instagram">
+                                <a href="#" class="entypo-instagram">
+                                    <i class="fa fa-instagram fa-2x"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>      
+                  </div>  
+                </div>
+                <div class="col-md-6 col-sm-6 profle-box-right clearfix">
+                    <h2>DJ Robat</h2>
+                    <h3>Turnable master</h3>
+                    <p>
+                        Nulla or narm mus vel ultricies. Quisque ve odio nibh. Fusce vel dignissim orem, ac malesuada massa. Manas malesuada.
+                    </p>
+                    <div class="profile-info text-center">
+                       <div class="eq">
+                            <span class="bar bar-1"></span>
+                            <span class="bar bar-2"></span>
+                            <span class="bar bar-3"></span>
+                       </div>
+                        <p>SINCE</p>
+                        <h3>2008</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                        <img class="img-responsive" src="images/event.png" alt="Night Club" />
+                        <p>EVENT</p>
+                        <h3>3598</h3>
+                    </div>
+                    <div class="profile-info text-center">
+                        <img class="img-responsive" src="images/latest.png" alt="Night Club" />
+                        <p>LATEST</p>
+                        <h3>10:33</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end club profiles -->
+
+
+
+<!-- Make-Reservation -->
+<div id="reservation" class="module parallax parallax-reservation">
+    <div class="container">
+        <div class="row">
+            <h1 class="wow fadeInUp editable" data-wow-duration="1s">Make Reservation</h1> 
+            <div class="col-sm-12 reservation-form">
+
+                <form class="form-horizontal" action="" method="POST">
+                  <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+                  <div class="form-group">
+                    <label for="name" class="col-sm-5 col-xs-12 control-label">Name?</label>
+                    <div class="col-sm-7 col-xs-12 input-field">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="name" placeholder="David Smith" onchange="checkField();" required />
+                          <span class="input-group-addon"><i class="fa fa-user fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="col-sm-5 col-xs-12 control-label">Phone number?</label>
+                    <div class="col-sm-5 col-xs-12 input-field">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="phone" placeholder="345-555-2398" onchange="checkField();" required />
+                          <span class="input-group-addon phone-icon"><i class="fa fa-mobile fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="people" class="col-sm-5 col-xs-12 control-label">For how many people?</label>
+                    <div class="col-sm-3 col-xs-12 input-field">
+                        <div class="input-group">
+                          <select name="peoples" id="people" class="form-control">
+                          	<option value="">1</option>
+                          	<option value="">2</option>
+                          	<option value="">3</option>
+                          	<option value="">4</option>
+                          	<option value="">5</option>
+                              <option value="">6+</option>
+                          </select>
+                          <span class="input-group-addon"><i class="fa fa-users fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="date" class="col-sm-5 col-xs-12 control-label">When?</label>
+                    <div class="col-sm-4 col-xs-12 input-field">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="date" placeholder="MM/DD/YY" onchange="checkField();" required />
+                          <span class="input-group-addon"><i class="fa fa-calendar fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="time" class="col-sm-5 col-xs-12 control-label">Time?</label>
+                    <div class="col-sm-3 col-xs-12 input-field">
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="time" name="concert-time" placeholder="04:30 pm" onchange="checkField();" required />
+                          <span class="input-group-addon"><i class="fa fa-clock-o fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="location" class="col-sm-5 col-xs-12 control-label">Where would you like to stay?</label>
+                    <div class="col-sm-6 col-xs-12 input-field">
+                        <div class="input-group">
+                          <select id="location" name="location" class="form-control">
+                              <option value="">Table for 2</option>
+                              <option value="">Table for 3</option>
+                              <option value="">Table for 4</option>
+                              <option value="">Table for 5</option>
+                              <option value="">Table for 6</option>
+                              <option value="">Table for 7</option>
+                              <option value="">Table for 8</option>
+                          </select>
+                          <span class="input-group-addon"><i class="fa fa-cube fa-2x"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10 text-center">
+
+                     <a href="#"
+                      id="fluxPrice"
+    class="snipcart-add-item"
+    data-item-id="siteSeatReservation"
+    data-item-name="Seat Reservation"
+    data-item-price=""
+    data-item-shippable="false"
+    data-item-image="images/logo_store.png"
+    data-item-url="http://fancy-jackal.cloudvent.net/"
+    data-item-description="Reserve your seat today!"><button type="submit" id="customButton" class="btn btn-default btn-lg btn-booking" name="booking" onclick="fluxxor()" value="booking">Book my Reservation</button></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Make-Reservation -->
+
+    <!-- Map -->
+    <div class="container-fluid margin-top">
+        <div class="row map wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" data-wow-offset="200">
+             <div id="map-canvas">
+               <h1 class="sr-only editable">Map</h1>
+             </div>
+        </div>
+    </div>
+        <!-- Map -->
+
+
